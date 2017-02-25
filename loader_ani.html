@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container
+{
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(240, 240, 236);
+}
+.ani
+{
+  margin:15px;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-color: #D3D3D3;
+  animation: loader 2s linear 1s infinite;
+}
+#a {animation-delay: 0s;}
+#b {animation-delay: 0.25s;}
+#c {animation-delay: 0.5s;}
+#d {animation-delay: 0.75s;}
+@keyframes loader {
+  0% { transform: scale(1,1);}
+  15% { transform: scale(1.5,1.5); background-color: #ccc8c8;}
+  30% { transform: scale(3,3); background-color: #A3A3A3;}
+  45% { transform: scale(1.5,1.5); background-color: #ccc8c8;}
+  60% { transform: scale(1,1);}
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div class="ani" id="a"></div>
+<div class="ani" id="b"></div>
+<div class="ani" id="c"></div>
+<div class="ani" id="d"></div>
+</div>
+</body>
+</html>
